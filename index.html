@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Profile Card</title>
+  </head>
+  <body>
+    <!-- Main profile card using semantic article tag -->
+    <article data-testid="test-profile-card">
+      <div class="card-layout">
+        <!-- Avatar section -->
+        <figure>
+          <img
+            src="/images/my image.jpg"
+            alt="Joshua Dodo's profile picture"
+            data-testid="test-user-avatar"
+          />
+          <figcaption>Joshua Dodo's avatar</figcaption>
+        </figure>
+
+        <!-- Main content -->
+        <div class="content">
+          <!-- Header with name and bio -->
+          <header>
+            <h2 data-testid="test-user-name">Joshua Dodo</h2>
+            <p data-testid="test-user-bio">
+              Full-stack developer passionate about creating accessible and
+              user-friendly web applications. I love learning new technologies
+              and sharing knowledge with the community.
+            </p>
+          </header>
+
+          <!-- Current time display -->
+          <div class="time-container">
+            <div class="time-label">Current Time (milliseconds)</div>
+            <p data-testid="test-user-time" id="currentTime">0</p>
+          </div>
+
+          <!-- Social links navigation -->
+          <nav
+            data-testid="test-user-social-links"
+            aria-label="Social media links"
+          >
+            <h3 class="section-title">Connect With Me</h3>
+            <ul class="social-list">
+              <li>
+                <a
+                  href="https://x.com/_whoiselisha_"
+                  data-testid="test-user-social-twitter"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Twitter
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/Inf3rn00"
+                  data-testid="test-user-social-github"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/joshuadodo/"
+                  data-testid="test-user-social-linkedin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  LinkedIn
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Hobbies section -->
+          <section>
+            <h3 class="section-title">Hobbies</h3>
+            <ul data-testid="test-user-hobbies">
+              <li>Basketball</li>
+              <li>Chess</li>
+              <li>Coding</li>
+              <li>Reading</li>
+            </ul>
+          </section>
+
+          <!-- Dislikes section -->
+          <section>
+            <h3 class="section-title">Dislikes</h3>
+            <ul data-testid="test-user-dislikes">
+              <li>Noisy People in the Morning</li>
+              <li>Cockroaches</li>
+              <li>ManChester United/Spurs</li>
+              <li>Wet Slippers</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </article>
+  </body>
+  <script src="script.js"></script>
+</html>
