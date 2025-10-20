@@ -3,98 +3,146 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Profile Card</title>
+    <title>Profile Card - Joshua Dodo</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <article data-testid="test-profile-card">
-      <div class="card-layout">
-        <figure>
-          <img
-            src="./images/my image.jpg"
-            alt="Joshua Dodo's profile picture"
-            data-testid="test-user-avatar"
-          />
-          <figcaption>Joshua Dodo's avatar</figcaption>
-        </figure>
-
-        <div class="content">
-          <header>
-            <h2 data-testid="test-user-name">Joshua Dodo</h2>
-            <p data-testid="test-user-bio">
-              Full-stack developer passionate about creating accessible and
-              user-friendly web applications. I love learning new technologies
-              and sharing knowledge with the community.
-            </p>
-          </header>
-
-          <!-- Current time display -->
-          <div class="time-container">
-            <div class="time-label">Current Time (milliseconds)</div>
-            <p data-testid="test-user-time" id="currentTime">0</p>
-          </div>
-
-          <nav
-            data-testid="test-user-social-links"
-            aria-label="Social media links"
-          >
-            <h3 class="section-title">Connect With Me</h3>
-            <ul class="social-list">
-              <li>
-                <a
-                  href="https://x.com/_whoiselisha_"
-                  data-testid="test-user-social-twitter"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Twitter
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/Inf3rn00"
-                  data-testid="test-user-social-github"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  GitHub
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/joshuadodo/"
-                  data-testid="test-user-social-linkedin"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  LinkedIn
-                </a>
-              </li>
-            </ul>
-          </nav>
-
-          <section>
-            <h3 class="section-title">Hobbies</h3>
-            <ul data-testid="test-user-hobbies">
-              <li>Basketball</li>
-              <li>Chess</li>
-              <li>Coding</li>
-              <li>Reading</li>
-            </ul>
-          </section>
-
-          <section>
-            <h3 class="section-title">Dislikes</h3>
-            <ul data-testid="test-user-dislikes">
-              <li>Noisy People in the Morning</li>
-              <li>Cockroaches</li>
-              <li>ManChester United/Spurs</li>
-              <li>Wet Slippers</li>
-            </ul>
-          </section>
-        </div>
+    <!-- Navigation -->
+    <nav>
+      <div class="nav-container">
+        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          ☰
+        </button>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="aboutMe.html">About</a></li>
+          <li><a href="contactMe.html">Contact</a></li>
+        </ul>
       </div>
-    </article>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-wrapper">
+      <article data-testid="test-profile-card">
+        <div class="card-layout">
+          <figure>
+            <img
+              src="./images/my image.jpg"
+              alt="Joshua Dodo's profile picture"
+              data-testid="test-user-avatar"
+            />
+            <figcaption>Joshua Dodo's avatar</figcaption>
+          </figure>
+
+          <div class="content">
+            <header>
+              <h2 data-testid="test-user-name">Joshua Dodo</h2>
+              <p data-testid="test-user-bio">
+                Frontend developer passionate about creating accessible and
+                user-friendly web applications. I love learning new technologies
+                and sharing knowledge with the community.
+              </p>
+            </header>
+
+            <!-- Current time display -->
+            <div class="time-container">
+              <div class="time-label">Current Time (milliseconds)</div>
+              <p data-testid="test-user-time" id="currentTime">0</p>
+            </div>
+
+            <nav
+              data-testid="test-user-social-links"
+              aria-label="Social media links"
+            >
+              <h3 class="section-title">Connect With Me</h3>
+              <ul class="social-list">
+                <li>
+                  <a
+                    href="https://x.com/_whoiselisha_"
+                    data-testid="test-user-social-twitter"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Twitter
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/Inf3rn00"
+                    data-testid="test-user-social-github"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/joshuadodo/"
+                    data-testid="test-user-social-linkedin"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    LinkedIn
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+            <section>
+              <h3 class="section-title">Hobbies</h3>
+              <ul data-testid="test-user-hobbies">
+                <li>Basketball</li>
+                <li>Chess</li>
+                <li>Coding</li>
+                <li>Reading</li>
+              </ul>
+            </section>
+
+            <section>
+              <h3 class="section-title">Dislikes</h3>
+              <ul data-testid="test-user-dislikes">
+                <li>Noisy People in the Morning</li>
+                <li>Cockroaches</li>
+                <li>ManChester United/Spurs</li>
+                <li>Wet Slippers</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <script>
+      // Mobile navigation toggle
+      const navToggle = document.querySelector('.nav-toggle');
+      const navMenu = document.querySelector('.nav-menu');
+
+      navToggle.addEventListener('click', () => {
+        const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+        navToggle.setAttribute('aria-expanded', !isExpanded);
+        navMenu.classList.toggle('active');
+      });
+
+      // Close mobile menu when clicking outside
+      document.addEventListener('click', (e) => {
+        if (!e.target.closest('nav')) {
+          navMenu.classList.remove('active');
+          navToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      // Function to update the current time in milliseconds
+      function updateTime() {
+        const timeElement = document.getElementById("currentTime");
+        timeElement.textContent = Date.now();
+      }
+
+      // Update time immediately when page loads
+      updateTime();
+
+      // Update time every second (1000 milliseconds)
+      setInterval(updateTime, 1000);
+    </script>
   </body>
-  <script src="script.js"></script>
 </html>

@@ -9,3 +9,5 @@ updateTime();
 
 // Update time every second (1000 milliseconds)
 setInterval(updateTime, 1000);
+
+
